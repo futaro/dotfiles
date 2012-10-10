@@ -1,7 +1,11 @@
-"pathogen
+""" pathogen
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+""" unite.vim
+if filereadable(expand('~/.vim/conf/.unite'))
+  source ~/.vim/conf/.unite
+endif
 
 "CHARSET
 set termencoding=utf-8
@@ -18,6 +22,8 @@ endif
 set nomodeline
 "バックアップを取らない
 set nobackup
+"swapをつくらない
+set noswapfile
 "オートインデント
 set autoindent
 "カーソル移動時の上下の余白
@@ -39,8 +45,9 @@ set noincsearch
 
 syntax on
 colorscheme wombat
-"行番号を表示しない
-set nonumber
+"行番号を表示する
+set number
+highlight LineNr ctermfg=238
 "タイトルを表示しない
 set notitle
 "タブ、折り返しに記号表示
@@ -63,6 +70,9 @@ set showcmd
 set laststatus=2
 "ステータスラインに文字コードと改行文字を表示する
 set statusline=%<%f%=%h%w%y%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%9(\ %m%r\ %)[%4v][%12(\ %5l/%5L%)]
+"カレント行をハイライト
+"set cursorline
+"highlight CursorLine ctermbg=233
 
 
 "表示行単位で行移動する
