@@ -1,3 +1,8 @@
+"pathogen
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
+
 "CHARSET
 set termencoding=utf-8
 set encoding=japan
