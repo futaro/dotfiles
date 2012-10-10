@@ -44,7 +44,7 @@ set wrapscan
 set noincsearch
 
 syntax on
-colorscheme wombat
+colorscheme molokai
 "行番号を表示する
 set number
 highlight LineNr ctermfg=238
