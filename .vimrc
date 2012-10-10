@@ -44,10 +44,11 @@ set wrapscan
 set noincsearch
 
 syntax on
-colorscheme molokai
+"colorscheme molokai
+colorscheme zenburn
 "行番号を表示する
 set number
-highlight LineNr ctermfg=238
+highlight LineNr ctermfg=White
 "タイトルを表示しない
 set notitle
 "タブ、折り返しに記号表示

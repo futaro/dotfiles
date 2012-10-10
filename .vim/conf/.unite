@@ -9,6 +9,7 @@ let g:unite_source_file_mru_filename_format = ''
 noremap <C-P> :Unite buffer<CR>
 " ファイル一覧
 noremap <C-N> :Unite -buffer-name=file file<CR>
+noremap <C-N> :Unite -buffer-name=files buffer_tab file_mru file bookmark file/new<CR>
 " 最近使ったファイルの一覧
 noremap <C-Z> :Unite file_mru<CR>
 " ウィンドウを分割して開く
