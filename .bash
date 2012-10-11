@@ -1,4 +1,4 @@
-export PS1='[\u@\h \W]\$ '
+export PS1='[\u@\h \w]\$ '
 
 export CLICOLOR=1
 export LSCOLORS=DxGxcxdxCxegedabagacad
