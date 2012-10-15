@@ -1,6 +1,8 @@
 """ pathogen
+filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+filetype on
 
 """ unite.vim
 if filereadable(expand('~/.vim/conf/.unite'))
