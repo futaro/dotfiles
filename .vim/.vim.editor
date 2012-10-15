@@ -1,0 +1,56 @@
+""" CHARSET
+set termencoding=utf-8
+set encoding=japan
+set fileencodings=utf-8,iso-2022-jp,cp932,euc-jp
+set fenc=utf-8
+set enc=utf-8
+set fileformats=unix,dos,mac
+if exists('&ambiwidth')
+  set ambiwidth=double
+endif
+
+""" モードラインの無効化
+set nomodeline
+
+""" バックアップを取らない
+set nobackup
+
+""" swapをつくらない
+set noswapfile
+
+""" オートインデント
+set autoindent
+
+""" カーソル移動時の上下の余白
+set scrolloff=5
+"backspaceキーの挙動を設定する
+" indent : 行頭の空白の削除を許す
+" eol : 改行の削除を許す
+" start : 挿入モードの開始位置での削除を許す
+set backspace=indent,eol,start
+
+""" 表示行単位で行移動する
+nnoremap j gj
+nnoremap k gk
+
+""" タイトルを表示しない
+set notitle
+
+""" タブ、折り返しに記号表示
+set listchars=tab:^\ \,trail:-,extends:>,precedes:<
+set list
+
+""" タブ幅を設定する
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+
+""" タブ入力時にスペースに変換
+set expandtab
+
+""" スマートタブ
+"set smarttab
+
+""" 括弧入力時の対応する括弧を表示
+set showmatch
+
