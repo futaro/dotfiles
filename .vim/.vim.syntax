@@ -1,8 +1,9 @@
 syntax on
 
 """ theme
+colorscheme solarized
 "colorscheme molokai
-colorscheme zenburn
+"colorscheme zenburn
 
 """ 行番号を表示する
 set number
