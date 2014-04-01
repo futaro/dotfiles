@@ -10,4 +10,4 @@ source ~/.vim/.vim.unite
 source ~/.vim/.vim.editor
 
 """ syntax
-"source ~/.vim/.vim.syntax
+source ~/.vim/.vim.syntax
