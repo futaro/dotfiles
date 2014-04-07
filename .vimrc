@@ -6,6 +6,9 @@ source ~/.vim/.vim.vundle
 """ unite.vim
 source ~/.vim/.vim.unite
 
+""" vimfiler
+source ~/.vim/.vim.filer
+
 """ editor
 source ~/.vim/.vim.editor
 

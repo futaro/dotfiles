@@ -7,23 +7,30 @@ let g:unite_source_file_mru_filename_format = ''
 
 " バッファ一覧
 noremap <C-P> :Unite buffer<CR>
+
 " ファイル一覧
 noremap <C-N> :Unite -buffer-name=file file<CR>
 noremap <C-N> :Unite -buffer-name=files buffer_tab file_mru file bookmark file/new<CR>
+
 " 最近使ったファイルの一覧
 noremap <C-Z> :Unite file_mru<CR>
+
 " ウィンドウを分割して開く
 au FileType unite nnoremap <silent> <buffer> <expr> <C-s> unite#do_action('split')
 au FileType unite inoremap <silent> <buffer> <expr> <C-s> unite#do_action('split')
+
 " ウィンドウを縦に分割して開く
 au FileType unite nnoremap <silent> <buffer> <expr> <C-l> unite#do_action('vsplit')
 au FileType unite inoremap <silent> <buffer> <expr> <C-l> unite#do_action('vsplit')
+
 "ctrl+oでその場所に開く
 au FileType unite nnoremap <silent> <buffer> <expr> <C-o> unite#do_action('open')
 au FileType unite inoremap <silent> <buffer> <expr> <C-o> unite#do_action('open')
+
 " ESCキーを2回押すと終了する
 au FileType unite nnoremap <silent> <buffer> <ESC><ESC> :q<CR>
 au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
+
 " 初期設定関数を起動する
 au FileType unite call s:unite_my_settings()
 function! s:unite_my_settings()
@@ -38,3 +45,7 @@ function! s:unite_my_settings()
   call unite#set_substitute_pattern('file', '\\\@<! ', '\\ ', -20)
   call unite#set_substitute_pattern('file', '\\ \@!', '/', -30)
   call unite#set_substitute_pattern('file', '^;v', '~/.vim/')
+
+""" vimfiler
+" IDE風にFilerを表示
+nnoremao <C-I> :VimFiler -split -simple -winwidth=35 -no-quit

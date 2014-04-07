@@ -5,6 +5,8 @@ filetype off
 set rtp+=~/.vim/vundle/
 call vundle#rc()
 
-Bundle 'unite.vim'
+Bundle 'Shougo/unite.vim'
+Bundle 'Shougo/vimfiler'
+Bundle 'Shougo/vimproc'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'molokai'
