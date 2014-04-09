@@ -47,5 +47,27 @@ function! s:unite_my_settings()
   call unite#set_substitute_pattern('file', '^;v', '~/.vim/')
 
 """ vimfiler
+" 標準のnetrwと置き換え
+let g:vimfiler_as_default_explorer = 1
+
+" SAFEモード無効
+let g:vimfiler_safe_mode_by_default = 0
+
 " IDE風にFilerを表示
-nnoremap <C-I> :VimFiler -split -simple -winwidth=35 -no-quit
+"nnoremap <C-f> :VimFiler -split -simple -winwidth=35 -no-quit <CR>
+nnoremap <C-f> :VimFiler -split -simple -winwidth=35 -toggle <CR>
+
+" タブで開く
+let g:vimfiler_edit_action = 'tabopen'
+
+" タブ移動
+nnoremap <S-Tab> gt
+nnoremap <Tab><Tab> gT
+for i in range(1, 9)
+    execute 'nnoremap <Tab>' . i . ' ' . i . 'gt'
+endfor
+
+
+
+
+
