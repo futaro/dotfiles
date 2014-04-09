@@ -48,4 +48,4 @@ function! s:unite_my_settings()
 
 """ vimfiler
 " IDE風にFilerを表示
-nnoremao <C-I> :VimFiler -split -simple -winwidth=35 -no-quit
+nnoremap <C-I> :VimFiler -split -simple -winwidth=35 -no-quit
