@@ -1,0 +1,11 @@
+[alias]
+    co = checkout
+    cm = commit -m 
+    br = branch
+    s = status --branch --short
+    d = diff --word-diff
+    g = grep --line-number --show-function --color --heading --break
+    l = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
+    
+
+
