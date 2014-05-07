@@ -27,4 +27,4 @@ set statusline=%<%f%=%h%w%y%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%9(\ %m%r\ 
 "set cursorline
 "highlight CursorLine ctermbg=233
 
-
+au BufRead,BufNewFile *.md set filetype=markdown
