@@ -1,11 +1,11 @@
 syntax on
 
 """ theme
-"set background=dark
-colorscheme solarized
+"colorscheme solarized
 "colorscheme molokai
 "colorscheme zenburn
 let g:solarized_termcolors=256
+let g:solarized_termtrans=1
 
 """ 行番号を表示する
 set number
