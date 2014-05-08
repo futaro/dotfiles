@@ -12,6 +12,7 @@ Bundle 'Shougo/vimfiler'
 " color
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'molokai'
+Bundle 'plasticboy/vim-markdown'
 Bundle 'w0ng/vim-hybrid'
 
 " coding

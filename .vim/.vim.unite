@@ -35,16 +35,16 @@ au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
 au FileType unite call s:unite_my_settings()
 function! s:unite_my_settings()
   " Overwrite settings.
-  endfunction
-  " 様々なショートカット
-  call unite#custom#substitute('file', '\$\w\+', '\=eval(submatch(0))', 200)
-  call unite#custom#substitute('file', '^@@', '\=fnamemodify(expand("#"), ":p:h")."/"', 2)
-  call unite#custom#substitute('file', '^@', '\=getcwd()."/*"', 1)
-  call unite#custom#substitute('file', '^;r', '\=$VIMRUNTIME."/"')
-  call unite#custom#substitute('file', '^\~', escape($HOME, '\'), -2)
-  call unite#custom#substitute('file', '\\\@<! ', '\\ ', -20)
-  call unite#custom#substitute('file', '\\ \@!', '/', -30)
-  call unite#custom#substitute('file', '^;v', '~/.vim/')
+endfunction
+" 様々なショートカット
+call unite#custom#substitute('file', '\$\w\+', '\=eval(submatch(0))', 200)
+call unite#custom#substitute('file', '^@@', '\=fnamemodify(expand("#"), ":p:h")."/"', 2)
+call unite#custom#substitute('file', '^@', '\=getcwd()."/*"', 1)
+call unite#custom#substitute('file', '^;r', '\=$VIMRUNTIME."/"')
+call unite#custom#substitute('file', '^\~', escape($HOME, '\'), -2)
+call unite#custom#substitute('file', '\\\@<! ', '\\ ', -20)
+call unite#custom#substitute('file', '\\ \@!', '/', -30)
+call unite#custom#substitute('file', '^;v', '~/.vim/')
 
 """ vimfiler
 " 標準のnetrwと置き換え
