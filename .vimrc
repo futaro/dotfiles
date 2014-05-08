@@ -11,3 +11,6 @@ source ~/.vim/.vim.editor
 
 """ syntax
 source ~/.vim/.vim.syntax
+
+""" neocomplcache
+source ~/.vim/.vim.neocomplcache

@@ -8,7 +8,16 @@ call vundle#rc()
 Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/neomru.vim'
 Bundle 'Shougo/vimfiler'
-Bundle 'Shougo/vimproc'
+
+" color
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'molokai'
 Bundle 'w0ng/vim-hybrid'
+
+" coding
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-endwise'
+Bundle 'AndrewRadev/switch.vim'
+Bundle 'Shougo/neocomplcache.vim'
+Bundle 'tsukkee/unite-tag'
+Bundle 'Shougo/vimproc'

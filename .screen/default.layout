@@ -1,0 +1,21 @@
+
+echo 'auto layout'
+
+# layout hoge
+
+layout remove hoge
+layout new hoge
+
+only
+select 0
+split -v
+resize 70%
+focus right
+split
+select 1
+focus bottom
+select 2
+focus left
+
+layout save hoge
+#layout autosave off

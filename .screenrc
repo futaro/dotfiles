@@ -58,3 +58,9 @@ bind -c layout 9 eval 'layout select 9' 'layout show'
 # continuous switch to other layout
 bind -c layout ^N eval 'layout next' 'command -c layout' 'layout show'
 bind -c layout ^P eval 'layout prev' 'command -c layout' 'layout show'
+
+
+
+bind u  eval                   'source $HOME/.screen/default.layout'
+bind U eval 'screen' 'screen' 'source $HOME/.screen/default.layout'
+
