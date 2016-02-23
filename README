@@ -2,3 +2,5 @@ README
 
 cd .vim/bundle/vimproc/
 make -f make_mac.mak
+
+test
