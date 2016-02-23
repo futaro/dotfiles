@@ -54,8 +54,8 @@ let g:vimfiler_as_default_explorer = 1
 let g:vimfiler_safe_mode_by_default = 0
 
 " IDE風にFilerを表示
-"nnoremap <C-f> :VimFiler -split -simple -winwidth=35 -no-quit <CR>
-nnoremap <C-f> :VimFiler -split -simple -winwidth=35 -toggle <CR>
+nnoremap <C-f> :VimFiler -split -simple -winwidth=35 -no-quit <CR>
+"nnoremap <C-f> :VimFiler -split -simple -winwidth=35 -toggle <CR>
 
 " タブで開く
 let g:vimfiler_edit_action = 'tabopen'

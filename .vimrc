@@ -1,5 +1,13 @@
 set t_Co=256
 
+if has('mac')
+  let g:vimproc_dll_path = $VIMRUNTIME . '/autoload/vimproc_mac.so'
+elseif has('win32')
+  let g:vimproc_dll_path = $HOME . '.vim/bundle/vimproc/autoload/vimproc_win32.dll'
+elseif has('win64')
+  let g:vimproc_dll_path = $HOME . '.vim/bundle/vimproc/autoload/vimproc_win64.dll'
+endif
+
 """ vundle
 source ~/.vim/.vim.vundle
 
@@ -11,6 +19,9 @@ source ~/.vim/.vim.editor
 
 """ syntax
 source ~/.vim/.vim.syntax
+
+""" vimfiler
+source ~/.vim/.vim.filer
 
 """ neocomplcache
 source ~/.vim/.vim.neocomplcache
