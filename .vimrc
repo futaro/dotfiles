@@ -25,3 +25,6 @@ source ~/.vim/.vim.filer
 
 """ neocomplcache
 source ~/.vim/.vim.neocomplcache
+
+""" ctag
+source ~/.vim/.vim.ctag

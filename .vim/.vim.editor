@@ -41,9 +41,9 @@ set listchars=tab:^\ \,trail:-,extends:>,precedes:<
 set list
 
 """ タブ幅を設定する
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 
 """ タブ入力時にスペースに変換
 set expandtab
@@ -54,3 +54,5 @@ set expandtab
 """ 括弧入力時の対応する括弧を表示
 set showmatch
 
+""" ハイライトをEscで抜ける
+nmap <Esc><Esc> :nohlsearch<CR><Esc>
