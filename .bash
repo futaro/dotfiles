@@ -6,4 +6,4 @@ export IGNOREEOF=3
 
 alias ls='ls -F'
 alias ll='ls -l'
-
+alias dsstore='find . -name ".DS_Store" | xargs rm'
