@@ -1,4 +1,6 @@
-export PS1='[\u@\h \W]\$ '
+#export PS1='[\u@\h \W]\$ '
+export PS1='\[\e[38m\]\W \[\e[32m\]›\[\e[34m\]›\[\e[35m\]› \[\e[0m\]'
+
 
 export CLICOLOR=1
 #export LSCOLORS=DxGxcxdxCxegedabagacad

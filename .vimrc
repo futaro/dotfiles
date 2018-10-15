@@ -17,11 +17,15 @@ source ~/.vim/.vim.unite
 """ editor
 source ~/.vim/.vim.editor
 
+""" syntastic
+source ~/.vim/.vim.syntastic
+
 """ syntax
 source ~/.vim/.vim.syntax
 
 """ vimfiler
-source ~/.vim/.vim.filer
+"source ~/.vim/.vim.filer
+source ~/.vim/.vim.nerdtree
 
 """ neocomplcache
 source ~/.vim/.vim.neocomplcache
